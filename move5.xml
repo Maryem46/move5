@@ -1,37 +1,38 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_repeat" id="38" inline="true" x="48" y="-3">
+  <block type="controls_repeat" id="38" inline="true" x="34" y="59">
     <value name="TIMES">
       <block type="math_number" id="55">
         <field name="NUM">4</field>
       </block>
     </value>
     <statement name="DO">
-      <block type="movement_forward" id="48"></block>
-    </statement>
-    <next>
-      <block type="robot_delay" id="66" inline="true">
-        <value name="DELAY">
-          <block type="math_number" id="73">
-            <field name="NUM">4000</field>
-          </block>
-        </value>
+      <block type="movement_forward" id="48">
         <next>
-          <block type="movement_right" id="83">
+          <block type="robot_delay" id="66" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="73">
+                <field name="NUM">4000</field>
+              </block>
+            </value>
             <next>
-              <block type="robot_delay" id="85" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="92">
-                    <field name="NUM">1300</field>
-                  </block>
-                </value>
+              <block type="movement_right" id="83">
                 <next>
-                  <block type="movement_stop" id="102"></block>
+                  <block type="robot_delay" id="85" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="92">
+                        <field name="NUM">1300</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="movement_stop" id="102"></block>
+                    </next>
+                  </block>
                 </next>
               </block>
             </next>
           </block>
         </next>
       </block>
-    </next>
+    </statement>
   </block>
 </xml>
